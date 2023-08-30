@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+  Landscape by Pixelarity
+  pixelarity.com | hello@pixelarity.com
+  License: pixelarity.com/license
+-->
+<html>
+  <head>
+    {{ partial "head/metadata" . }}
+    {{/* partial "head/favicons" . */}}
+    {{ partial "head/css" . }}
+    {{ partial "head/scripts" . }}
+    {{ template "_internal/opengraph.html" . }}
+
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="#intro">Intro<span class="extra">duction</span></a>
+          </li>
+          <li>
+            <a href="#one">First<span class="extra"> Section</span></a>
+          </li>
+          <li>
+            <a href="#two">Second<span class="extra"> Section</span></a>
+          </li>
+          <li>
+            <a href="#three">Third<span class="extra"> Section</span></a>
+          </li>
+          <li>
+            <a href="#contact">Contact<span class="extra"> Us</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+      <!-- Reel -->
+      <div class="reel">
+        <!-- Intro -->
+        <article id="intro" class="slide style1 center">
+          {{ $introImage := resources.Get "images/pic01.jpg" }}
+          <img src="{{ $introImage.RelPermalink }}" alt="" data-position="30% 50%" />
+          <div class="inner">
+            <header>
+              <h1>Identifying Nelson/<br  />Buscando a Roberto</h1>
+              <p>
+                An upcoming documentary film by Nelson/Roberto and John Younger.
+              </p>
+            </header>
+            <ul class="actions special">
+              <li><a href="#one" class="button next">learn more</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- One -->
+        <article id="one" class="slide style2 left">
+          <img src="images/pic02.jpg" alt="" data-position="center" />
+          <div class="inner">
+            <h2>About the film</h2>
+            <p>
+              In 1997, nelson de witt, a 16-year-old adoptee from Boston,
+              Massachusetts, discovered that he had been identified as one
+              Roberto Coto, an infant who disappeared in 1982 after a deadly
+              government raid on three guerrilla safe houses in Tegucigalpa,
+              Honduras.
+            </p>
+            <p>
+              The raid rescued a kidnapped businessman and also resulted in the
+              disappearance of a dozen Salvadoran revolutionaries, including
+              Roberto’s biological mother, Ana Milagro Escobar. Today, a
+              generation after one of the bloodiest conflicts of the Cold War,
+              the wounds of the Civil War in El Salvador are still open and the
+              truth about them has been obscured.
+            </p>
+            <p>
+              Nelson/Roberto has determined that sharing his search for the
+              truth about his story is his way of making a difference. At the
+              heart of Nelson/Roberto’s search is the simple belief that finding
+              what makes us all alike—or connected—can change the world.
+            </p>
+            <ul class="actions special">
+              <li><a href="#two" class="button next">Proceed</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+    
+  </body>
+</html>
