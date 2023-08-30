@@ -1,0 +1,3 @@
+baseURL: "http://localhost:1313/"
+enableRobotsTXT: true
+disableKinds: ["taxonomy", "term", "tag"]
