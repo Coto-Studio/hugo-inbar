@@ -1,0 +1,11 @@
+<nav id="nav">
+  <ul>
+    {{ range . }}
+      {{ if .Params.menu }}
+        <li>
+          <a href="#{{ .Params.id }}">{{with .Params.menuTitle}}{{.}}{{else}}{{ .Title }}{{end}}</a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</nav>

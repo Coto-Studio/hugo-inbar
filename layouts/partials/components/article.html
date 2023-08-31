@@ -1,0 +1,27 @@
+<article id="{{ .Params.id }}" class="slide {{ .Params.style }} {{ .Params.alignment }} {{if .Content}}with-content{{end}}">
+  {{ $introImage := resources.Get .Params.image }}
+  <img src="{{ $introImage.RelPermalink }}" alt="" data-position="{{ .Params.imagePosition }}" />
+  <div class="inner">
+    <header>
+      {{ if .Next }}
+        <h2>{{ .Title }}</h2>
+      {{ else }}
+        <h1>{{ .Title }}</h1>
+      {{ end }}
+      <p>{{ .Params.description }}</p>
+    </header>
+    {{ with .Content }}
+      <div class="content">
+        {{ . }}
+      </div>
+    {{ end }}
+    {{ with .Prev }}
+      <ul class="actions special">
+        <li><a href="#{{ .Params.id }}" class="button next">Proceed</a></li>
+      </ul>
+    {{ end }}
+    {{ if .Params.social }}
+      {{ partial "components/social" .}}
+    {{ end }}
+  </div>
+</article>
