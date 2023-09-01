@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+  Landscape by Pixelarity
+  pixelarity.com | hello@pixelarity.com
+  License: pixelarity.com/license
+-->
+<html>
+  <head>
+    {{ partial "head/metadata" . }}
+    {{/* partial "head/favicons" . */}}
+    {{ partial "head/css" . }}
+    {{ partial "head/scripts" . }}
+    {{ template "_internal/opengraph.html" . }}
+    <style>
+      {{ range .Site.Params.themeColor }}
+        @media (prefers-color-scheme: {{ .schema }}) {
+          :root {
+            --background: #2b2b2b;
+            --accent-color: {{ .content }};
+          }
+        }
+      {{ end }}
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Main -->
+    <div id="main">
+      <!-- Reel -->
+      <div class="reel">
+        <article>
+          <div class="inner">
+            <header>
+              <h1>404 Not Found</h1>
+            </header>
+          </div>        
+        </article>
+      </div>
+    </div>   
+  </body>
+</html>
