@@ -8,6 +8,11 @@
 	License: pixelarity.com/license
 */
 
+:root {
+  --header-shadow: 5px 5px 3px #1a1a1a;
+  --text-shadow: 1px 1px 2px #1a1a1a;
+}
+
 html,
 body,
 div,
@@ -226,7 +231,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 12pt;
+    font-size: 14pt;
   }
 }
 
@@ -235,7 +240,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 12pt;
+    font-size: 14pt;
   }
 }
 
@@ -244,7 +249,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 11pt;
+    font-size: 12pt;
   }
 }
 
@@ -309,12 +314,14 @@ h1 {
   font-family: 'Old Standard TT', cursive;
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px black; 
   font-size: 3.30em;
   margin: 0 0 0.25em 0;
 }
 
 h2 {
+  font-family: 'Old Standard TT', cursive;
+  font-weight: 400;
+  text-transform: uppercase;
   font-size: 2em;
 }
 
@@ -337,11 +344,12 @@ h6 {
 header {
   font-family: "Bitter", serif;
   font-weight: 400;
+  text-shadow: var(--header-shadow); 
 }
 
-header p {
+header p, header a {
   font-size: 1.25em;
-  text-shadow: 1px 1px 2px black; 
+  text-shadow: var(--text-shadow); 
 }
 
 @media screen and (max-width: 736px) {
@@ -1269,6 +1277,7 @@ input[type="button"],
 button,
 .button {
   border: solid 1px #ffffff !important;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 input[type="submit"]:hover,
@@ -1530,7 +1539,7 @@ body {
   max-height: 100%;
   z-index: 4;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
 }
 
 #main .slide > .inner > .content {
@@ -1542,7 +1551,7 @@ body {
   -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
   -ms-transition: opacity 1s ease, -ms-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
-  background-color: #ffffff;
+  background-color: rgb(255,255,255,0.9);
   color: #2b2b2b;
   -moz-transform: translateY(1.5em);
   -webkit-transform: translateY(1.5em);
