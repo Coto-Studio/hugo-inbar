@@ -1,23 +1,28 @@
-<article id="{{ .Params.id }}" class="slide {{ .Params.style }} {{ .Params.alignment }} {{if .Content}}with-content{{end}}">
-  {{ $introImage := resources.Get .Params.image }}
-  <img src="{{ $introImage.RelPermalink }}" alt="" data-position="{{ .Params.imagePosition }}" />
+{{ $introImage := resources.Get .Params.image }}
+{{ $4k := $introImage.Resize "3840x q100" }}
+{{ $2k := $introImage.Resize "2560x q80" }}
+{{ $hd := $introImage.Resize "1080x q90" }}
+{{ $4k_webp := $introImage.Resize "3840x q100 webp" }}
+{{ $2k_webp := $introImage.Resize "2560x q100 webp" }}
+{{ $hd_webp := $introImage.Resize "1080x q90  webp" }}
+<article id="{{ .Params.id }}" class="slide {{ .Params.style }} {{ .Params.alignment }} {{if .Content}}with-content{{end}}" data-position="{{ .Params.imagePosition }}" data-src="{{ $2k_webp.RelPermalink }}">
   <div class="inner">
     <header>
       {{ if .Next }}
-        <h2>{{ .Title }}</h2>
+        <h2>{{ .Title | safeHTML }}</h2>
       {{ else }}
-        <h1>{{ .Title }}</h1>
+        <h1>{{ .Title | safeHTML }}</h1>
       {{ end }}
       <p>{{ .Params.description }}</p>
     </header>
     {{ with .Content }}
-      <div class="content">
+      <div class="content align-left">
         {{ . }}
       </div>
     {{ end }}
     {{ with .Prev }}
       <ul class="actions special">
-        <li><a href="#{{ .Params.id }}" class="button next">Proceed</a></li>
+        <li><a href="#{{ .Params.id }}" class="button next">{{with .Params.menuTitle}}{{.}}{{else}}{{.Title}}{{end}}</a></li>
       </ul>
     {{ end }}
     {{ if .Params.social }}
