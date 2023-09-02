@@ -11,4 +11,6 @@ title: "An Historic Invitation"
 description: ""
 ---
 
-16 years later in 2011 Nelson is invited to El Salvadoras Day of the dissapeared where the for the first time in the nations history the president acknoleges the existance of the disapaered.
+In 2011, sixteen years after reuniting with his family, Nelson/Roberto was invited to El Salvador's Day of the Disappeared, where the country's president acknowledged their existence for the first time in the nation's history.
+
+During the week-long trip...
