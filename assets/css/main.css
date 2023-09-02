@@ -277,6 +277,10 @@ p {
   margin: 0 0 2em 0;
 }
 
+p:has( + ul){
+  margin: 0 0 0em 0;
+}
+
 h1,
 h2,
 h3,
@@ -1277,7 +1281,8 @@ input[type="button"],
 button,
 .button {
   border: solid 1px #ffffff !important;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
 }
 
 input[type="submit"]:hover,
@@ -1393,10 +1398,10 @@ body {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   display: block;
   border: 0;
-  line-height: 3.5em;
-  height: 3.5em;
+  line-height: 1.4em;
+  margin-block: 1em;
   border-radius: 4px;
-  padding: 0 2em;
+  padding: 0.8em 1em;
   font-family: "Bitter", serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -1428,7 +1433,7 @@ body {
   }
 
   #header nav ul li a {
-    padding: 0 1.5em;
+    padding: 0.8em 1.5em;
   }
 
   #header nav ul li a .extra {
