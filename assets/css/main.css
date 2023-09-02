@@ -369,11 +369,11 @@ header p, header a {
   h4,
   h5,
   h6 {
-    line-height: 1.1;
+    line-height: 1.2;
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 1.8em;
   }
 
   h2 {
