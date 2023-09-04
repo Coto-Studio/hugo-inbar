@@ -7,3 +7,14 @@ images:
 themeColor: 
   - schema: light
     content: "#51462c"
+
+socialLinks:
+  - url: https://www.instagram.com/inbarfilm/
+    icon: brands fa-instagram
+    label: Instagram
+  - url: https://www.youtube.com/@inbarfilm
+    icon: brands fa-youtube
+    label: YouTube
+  - url: "mailto:info@identifyingnelson.com"
+    icon: solid fa-envelope
+    label: Email
