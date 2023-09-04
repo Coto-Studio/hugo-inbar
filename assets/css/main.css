@@ -348,7 +348,8 @@ h6 {
 header {
   font-family: "Bitter", serif;
   font-weight: 400;
-  text-shadow: var(--header-shadow); 
+  text-shadow: var(--header-shadow);
+  z-index:999;
 }
 
 header p, header a {
@@ -1453,7 +1454,7 @@ body {
   position: absolute;
   top: 3.25em;
   left: 0;
-  height: calc(100% - 3.25em);
+  height: calc(100% - 1.25em);
   width: 100%;
   overflow: hidden;
 }
