@@ -25,7 +25,6 @@ Editing Assistance:
 
 Production Assistance:
 - Alexander Renderos
-- Stuart Swezey
 
 Cinematography:
 - Ivan Manzano
@@ -41,7 +40,7 @@ Translation Assistance:
 - Flor Coto
 
 Transcriptions:
-- Lorie Mayberry
+- Lorie Younger
 
 Equipment Provided by
 - Imaginaut Entertainment
@@ -50,8 +49,6 @@ Archival Footage And Stills Provided by:
 - Mariano Coto  
 - Tom de Witt
 - Margaret Ward
-- Wellesley College
-- Physicians for Human Rights
 
 Website Design:
 - Cedric Victor
