@@ -1,2 +1,2 @@
 enableRobotsTXT: true
-disableKinds: ["taxonomy", "term", "tag", "section"]
+disableKinds: ["taxonomy", "term", "section"]
