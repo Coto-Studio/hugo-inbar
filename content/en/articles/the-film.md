@@ -13,9 +13,13 @@ description: ""
 
 In 2011, sixteen years after reuniting with his family, Nelson/Roberto gets invited to El Salvador's Day of the Disappeared, where the country's president might acknowledge their existence for the first time in the nation's history.
 
+<<<<<<< HEAD
 The event, which is taking place nearly two decades after the end of one of the bloodiest conflicts of the Cold War, could be a turning point for the country. 
 
 Despite the skepticism voiced by some attendees, Nelson/Roberto is hopeful that the government will take meaningful action to help the families of the Disappeared, who are still searching for answers about their loved ones.
+=======
+The event, which is taking place nearly two decades after the end of one of the bloodiest conflicts of the Cold War, could be a turning point for the country. Despite the skepticism voiced by some attendees, Nelson/Roberto is hopeful that the government will take meaningful action to help the families of the Disappeared, who are still searching for answers about their loved ones.
+>>>>>>> cd5a927f6d550b0da8cd5652aa0a5a8ca7a4973e
 
 {{< image src="images/film-stills/Meeting_President_Funez.jpg" align="fit" >}}
 
