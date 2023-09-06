@@ -14,7 +14,7 @@ This project has been a labor of love for over a decade. Along the way, many peo
 
 ### To Our Backers
 
-First and foremost, we would like to thank our 170 Kickstarter backers. This film would never have been possible without their financial and emotional support. It was due to their generosity that we were able to fly to El Salvador and capture these unforgettable moments.
+First and foremost, we would like to thank our 170 Kickstarter backers. This film would never have been possible without their financial and emotional support. Due to their generosity, we could fly to El Salvador and capture these unforgettable moments.
 
 ### Special Thanks
 
