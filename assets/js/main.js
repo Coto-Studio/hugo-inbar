@@ -151,7 +151,6 @@
 				$slides.each(function() {
 
 					var $this = $(this),
-						// $img = $this.children('img'),
 						id = $this.attr('id'),
 						position = $this.data('position'),
 						bg = {
@@ -163,6 +162,7 @@
 						},
 						x;
 
+					
 					// Set index.
 						$this
 							.data('index', $this.index())
@@ -213,12 +213,10 @@
 								||	!browser.canUse('transition')
 								||	$window.prop('orientation') == 0 || $window.prop('orientation') == 180
 								||	$window.width() < $window.height()) {
-
 									if (position)
 										$this.css('background-position', (bg.position ? bg.position + ',' : '') + position);
 									else
 										$this.css('background-position', (bg.position ? bg.position + ',' : '') + '0% 50%');
-
 								}
 								else {
 
@@ -227,7 +225,7 @@
 										w = $this.width(),
 										p = ( (sl - l) / w );
 
-									$this.css('background-position', (bg.position ? bg.position + ',' : '') + (p * 100) + '% 50%');
+									$this.css('background-position', (bg.position ? bg.position + ',' : '') + (p * 100) + '% 20%');
 
 								}
 
