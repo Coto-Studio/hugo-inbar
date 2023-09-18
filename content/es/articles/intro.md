@@ -1,7 +1,7 @@
 ---
 id: intro
 menu: true
-menuTitle: Casa
+menuTitle: INICIO
 style: style1
 social: true
 alignment: center

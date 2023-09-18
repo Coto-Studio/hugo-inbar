@@ -6,7 +6,7 @@ alignment: center
 weight: 4
 image: images/poster.png
 imagePosition: "50% 28%"
-title: "Join the Journey"
+title: "Únete al viaje"
 description: ""
 ---
 
