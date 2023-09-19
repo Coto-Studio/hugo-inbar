@@ -10,10 +10,10 @@ title: "Agradecimiento"
 description: ""
 ---
 
-This film never would have been possible with the support of our 146 Kickstarter backers.
+Este Documental nunca hubiera sido posible sin el apoyo de nuestros 146 patrocinadores de Kickstarter.
 
 ### Credits
 
-NARRATOR/PRODUCER | Nelson de Witt/Roberto Coto
+NARRADOR / PRODUCTOR | Nelson de Witt/Roberto Coto
 
-DIRECTOR/PRODUCER | John Younger
+DIRECTOR / PRODUCER | John Younger
