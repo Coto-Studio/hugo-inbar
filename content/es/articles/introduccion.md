@@ -1,5 +1,5 @@
 ---
-id: intro
+id: introduccion
 menu: true
 menuTitle: INICIO
 style: style1

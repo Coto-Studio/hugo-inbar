@@ -1,5 +1,5 @@
 ---
-id: "join-the-journey"
+id: "unete-al-viaje"
 menu: true
 style: style1
 alignment: center

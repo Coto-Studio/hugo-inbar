@@ -1,5 +1,5 @@
 ---
-id: "the-story"
+id: "la-historia"
 menu: true
 menuTitle: "La Historia"
 style: style2

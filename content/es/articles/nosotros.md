@@ -1,5 +1,5 @@
 ---
-id: "about-us"
+id: "nosotros"
 menu: true
 style: style1
 alignment: center
