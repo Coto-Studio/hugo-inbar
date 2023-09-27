@@ -1,5 +1,5 @@
 ---
-id: intro
+id: introduccion
 menu: true
 menuTitle: INICIO
 style: style1
@@ -9,5 +9,5 @@ weight: 1
 image: images/poster.png
 imagePosition: "50% 28%"
 title: "Identifying Nelson/<br />Buscando a Roberto"
-description: "Un documental de Nelson/Roberto and John Younger."
+description: "Un documental de Nelson/Roberto y John Younger."
 ---

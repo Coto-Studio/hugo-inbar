@@ -1,5 +1,5 @@
 ---
-id: "join-the-journey"
+id: "unete-al-viaje"
 menu: true
 style: style1
 alignment: center
@@ -10,4 +10,4 @@ title: "Únete al viaje"
 description: ""
 ---
 
-{{< form >}}
+{{< form-es >}}
