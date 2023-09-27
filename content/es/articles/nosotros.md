@@ -38,4 +38,5 @@ Después de volver a conectarme con él en Facebook, comencé a leer el blog de 
 
 ### Más de nosotros
 
-Para obtener más información sobre nuestro trabajo, consulte el sitio web de nuestra empresa, [Cabin 23 Productions] (https://cabin23productions.com).
+Para obtener más información sobre nuestro trabajo, consulte el sitio web de nuestra empresa,
+[Cabin 23 Productions](https://cabin23productions.com).
