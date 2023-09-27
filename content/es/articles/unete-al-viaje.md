@@ -10,4 +10,4 @@ title: "Únete al viaje"
 description: ""
 ---
 
-{{< form >}}
+{{< form-es >}}
