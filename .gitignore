@@ -2,8 +2,5 @@
 *.lock
 /public
 /resources
-<<<<<<< HEAD
 .vscode/
 
-=======
->>>>>>> parent of 9a9fc17 (addign folder to gitignore)
