@@ -155,6 +155,7 @@
 						position = $this.data('position'),
 						bg = {
 							image: $this.css('background-image'),
+							src: browser.mobile ? $this.data('src-mobile') : $this.data('src'),
 							size: $this.css('background-size'),
 							position: $this.css('background-position'),
 							repeat: $this.css('background-repeat'),
@@ -172,7 +173,7 @@
 
 						// Assign image.
 							$this
-								.css('background-image', (bg.image ? bg.image + ',' : '') + 'url("' + $this.data('src') + '")')
+								.css('background-image', (bg.image ? bg.image + ',' : '') + 'url("' + bg.src + '")')
 								.css('background-size', (bg.size ? bg.size + ',' : '') + 'cover')
 								.css('background-position', (bg.position ? bg.position + ',' : '') + '0% 50%')
 								.css('background-repeat', (bg.repeat ? bg.repeat + ',' : '') + 'no-repeat')

@@ -1,6 +1,7 @@
 {{ $introImage := resources.Get .Params.image }}
 {{ $2k_webp := $introImage.Resize "2560x q90 webp" }}
-<article id="{{ .Params.id }}" class="slide {{ .Params.style }} {{ .Params.alignment }} {{if .Content}}with-content{{end}}" data-position="{{ .Params.imagePosition }}" data-src="{{ $2k_webp.RelPermalink }}">
+{{ $hd_webp := $introImage.Resize "1080x q80 webp" }}
+<article id="{{ .Params.id }}" class="slide {{ .Params.style }} {{ .Params.alignment }} {{if .Content}}with-content{{end}}" data-position="{{ .Params.imagePosition }}" data-src="{{ $2k_webp.RelPermalink }}" data-src-mobile="{{ $hd_webp.RelPermalink }}">
   <div class="inner">
     <header>
       {{ if .Next }}
