@@ -2,9 +2,13 @@
 {{ $jQuery := resources.Get "js/jquery.min.js" }}
 {{ $browser := resources.Get "js/browser.min.js" }}
 {{ $breakpoints := resources.Get "js/breakpoints.min.js" }}
+{{ $botpoison := resources.Get "js/botpoison-ajax.js" }}
 {{ $util := resources.Get "js/util.js" }}
 {{ $main := resources.Get "js/main.js" }}
-{{ $js := slice $jQuery $browser $breakpoints $util $main | resources.Concat "assets/js/bundle.js" }}
+{{ $js := slice $jQuery $browser $breakpoints $util $botpoison $main | resources.Concat "assets/js/bundle.js" }}
+
+<!-- Botpoison Script -->
+<script type="application/javascript" src="https://unpkg.com/@botpoison/browser" async></script>
 
 <!-- Scripts -->
 <script type="application/javascript" src='{{ $js.RelPermalink }}' defer></script>

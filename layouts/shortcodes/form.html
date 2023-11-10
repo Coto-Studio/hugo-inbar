@@ -1,15 +1,11 @@
-<div style="height: 40vmin; min-height: 360px">
-  <script
-    src="https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js"
-    data-label-1="inbar"
-    data-label-2="Website"
-    data-background-color=""
-    data-text-color="#000000"
-    data-button-color="#51462c"
-    data-button-text-color="#FFFFFF"
-    data-title="Get monthly updates about the films progress."
-    data-description=" "
-    data-site="https://cabin23productions.com"
-    async
-  ></script>
-</div>
+<h3>{{ i18n "updates" }}</h3>
+<form method="post" action="https://submit-form.com/Rhb1v6Jvw" data-botpoison-public-key="pk_56ec61a9-9977-42be-93dc-bcbfca230561">
+  <div class="fields">
+    <div class="field half"><input type="text" name="name" id="name" placeholder="{{ i18n "name" }}" /></div>
+    <div class="field half"><input type="email" name="email" id="email" placeholder="{{ i18n "email" }}" /></div>
+    <input type="hidden" name="language" id="language" value="{{ .Site.Language.Lang }}" />
+  </div>
+  <ul class="actions special">
+    <li><input type="submit" value="{{ i18n "submit" }}" /></li>
+  </ul>
+</form>
