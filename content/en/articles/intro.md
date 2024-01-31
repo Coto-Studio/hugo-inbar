@@ -1,5 +1,6 @@
 ---
 id: intro
+url: /#
 menu: true
 menuTitle: Home
 style: style1
