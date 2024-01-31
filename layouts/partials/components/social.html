@@ -1,9 +1,24 @@
 <ul class="icons">
   {{ range .Site.Params.socialLinks }}
     <li>
-      <a href="{{.url}}" class="icon {{.icon}}">
+      <a href="{{.url}}" class="solid icon {{.icon}}">
         <span class="label">{{.label}}</span>
       </a>
     </li>
   {{ end }}
+</ul>
+
+{{ $pageLang := .Page.Language }}
+<ul class="alt">
+{{ with .AllTranslations }}
+    {{ range . }}
+      {{ $langName := or .Language.LanguageName .Language.Lang }}
+      {{ $langCode := or .Language.LanguageCode .Language.Lang }}
+      {{ if not (strings.Contains $pageLang $langCode) }}
+      <li>
+        <a href="{{ .Permalink }}" hreflang="{{ $langCode }}" class="button primary small">{{ $langName }}</a>
+      </li>
+      {{ end }}
+    {{ end }}
+{{ end }}
 </ul>
