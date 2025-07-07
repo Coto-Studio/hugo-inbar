@@ -1,0 +1,25 @@
+name: Hugo Site - Build & Deploy on Push
+
+on:
+  push:
+    branches:
+      - "main"
+      - "dev"
+  workflow_dispatch:
+
+permissions:
+  packages: write
+
+jobs:
+  cs-docker-imgae-build:
+    name: CS Workflow
+    uses: Coto-Studio/workflows/.github/workflows/docker-build-image-v3.yml@main
+    secrets:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+
+  cs-docker-stack-deploy:
+    name: CS Workflow
+    needs: cs-docker-imgae-build
+    uses: Coto-Studio/workflows/.github/workflows/docker-stack-deploy-v3.yml@main
+    secrets:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
