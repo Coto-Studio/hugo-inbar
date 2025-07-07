@@ -1,6 +1,6 @@
 ---
 id: introduccion
-url: /#
+url: /
 menu: true
 menuTitle: INICIO
 style: style1
