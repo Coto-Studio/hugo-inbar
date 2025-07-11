@@ -1,8 +1,9 @@
 en:
   languageName: "English"
   contentDir: content/en
-  baseURL: https://www.identifyingnelson.com/
+  baseURL: https://identifyingnelson.com/
+  
 es:
   languageName: "Español"
   contentDir: content/es
-  baseURL: https://www.buscandoaroberto.com/
+  baseURL: https://buscandoaroberto.com/
