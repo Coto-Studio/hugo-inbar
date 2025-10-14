@@ -1,9 +1,12 @@
 <h3>{{ i18n "updates" }}</h3>
-<form method="post" action="https://submit-form.com/Rhb1v6Jvw" data-botpoison-public-key="pk_56ec61a9-9977-42be-93dc-bcbfca230561">
+<form method="post" action="https://submit-form.com/Rhb1v6Jvw"
+  data-botpoison-public-key="pk_56ec61a9-9977-42be-93dc-bcbfca230561">
   <div class="fields">
     <div class="field half"><input type="text" name="name" id="name" placeholder="{{ i18n "name" }}" /></div>
-    <div class="field half"><input type="email" name="email" id="email" placeholder="{{ i18n "email" }}" /></div>
+    <div class="field half"><input type="email" name="email" id="email" placeholder="{{ i18n "email" }}" required />
+    </div>
     <input type="hidden" name="language" id="language" value="{{ .Site.Language.Lang }}" />
+    <input class="bot-check" type="checkbox" name="isHuman" tabindex="-1" autocomplete="off" />
   </div>
   <ul class="actions special">
     <li><input type="submit" value="{{ i18n "submit" }}" /></li>
