@@ -163,7 +163,7 @@
 						},
 						x;
 
-					
+
 					// Set index.
 						$this
 							.data('index', $this.index())
@@ -302,32 +302,48 @@
 
 						}, 0);
 					})
-					.on('load', function() {
-						setTimeout(function() {
+					.on('hashchange', function() {
+						var h = location.hash,
+							$slide;
 
-							var h, $slide;
-
-							// Trigger resize.
-								$window.triggerHandler('resize');
-
-							// Get initial slide.
-								h = location.hash;
-
-								if (h
-								&&	($slide = $slides.filter('[id="' + h.substr(1) + '"]')).length > 0)
-									pos = $slide.data('index');
-
-							// Switch.
-								switchTo(pos, true);
-
-						}, 0);
+						if (h
+						&&	($slide = $slides.filter('[id="' + h.substr(1) + '"]')).length > 0)
+							switchTo($slide.data('index'));
 					});
 
-				// Parallax.
-					if (settings.parallax)
-						$window.on('resize', function() {
-							$main.triggerHandler('scroll');
-						});
+			// Initialize function - handles initial slide based on hash.
+				var initialize = function() {
+					setTimeout(function() {
+
+						var h, $slide;
+
+						// Trigger resize.
+							$window.triggerHandler('resize');
+
+						// Get initial slide.
+							h = location.hash;
+
+							if (h
+							&&	($slide = $slides.filter('[id="' + h.substr(1) + '"]')).length > 0)
+								pos = $slide.data('index');
+
+						// Switch.
+							switchTo(pos, true);
+
+					}, 0);
+				};
+
+			// Run initialize on load, or immediately if already loaded.
+				if (document.readyState === 'complete')
+					initialize();
+				else
+					$window.on('load', initialize);
+
+			// Parallax.
+				if (settings.parallax)
+					$window.on('resize', function() {
+						$main.triggerHandler('scroll');
+					});
 
 		})();
 

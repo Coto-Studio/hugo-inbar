@@ -5,3 +5,11 @@
 .vscode/
 docker-stack-op.yaml
 *.css.map
+
+# Node
+node_modules/
+
+# Playwright
+playwright-report/
+test-results/
+.playwright-mcp/
