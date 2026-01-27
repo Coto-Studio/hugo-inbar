@@ -77,6 +77,35 @@ SASS compilation via Hugo Pipes (Dart Sass):
 
 JavaScript bundled in `partials/head/scripts.html` via Hugo's `resources.Concat`.
 
+### Image Processing
+
+The `resources/_gen/` directory is committed to avoid slow image processing during CI builds (ARM64 builds under QEMU emulation timeout otherwise).
+
+**When adding or changing images:**
+
+```bash
+# 1. Add/modify images in assets/images/
+# 2. Run Hugo locally to regenerate the cache
+hugo
+
+# 3. Commit both the images and the regenerated cache
+git add assets/images/ resources/
+git commit -m "Add new images"
+git push
+```
+
+**When you need to regenerate the cache:**
+- Adding new images to `assets/images/`
+- Replacing or modifying existing images
+- Changing image processing parameters in templates (resize dimensions, quality)
+
+**When you don't need to:**
+- Content-only changes (text, markdown)
+- CSS/JS changes
+- Config changes that don't affect images
+
+If you push image changes without updating `resources/`, the CI build will likely timeout.
+
 ## Deployment
 
 Automated via GitHub Actions on push to `main` or `dev`:
