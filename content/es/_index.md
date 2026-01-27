@@ -1,0 +1,4 @@
+---
+params:
+  plausibleDomain: buscandoaroberto.com
+---

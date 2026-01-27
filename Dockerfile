@@ -1,4 +1,4 @@
-FROM ghcr.io/gohugoio/hugo:latest AS build
+FROM ghcr.io/hugomods/hugo:dart-sass-node-git AS build
 
 ARG ENVIRONMENT
 
@@ -14,6 +14,6 @@ LABEL org.opencontainers.image.source="https://github.com/Coto-Studio/hugo-inbar
 
 ADD default.conf /etc/nginx/conf.d/
 
-COPY --from=build /project/public /usr/share/nginx/html
+COPY --from=build /src/public /usr/share/nginx/html
 
 EXPOSE 80

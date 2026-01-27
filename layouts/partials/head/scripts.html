@@ -12,3 +12,7 @@
 
 <!-- Scripts -->
 <script type="application/javascript" src='{{ $js.RelPermalink }}' defer></script>
+
+{{ if (eq hugo.Environment "main") }}
+<script defer data-domain="{{ .Params.plausibleDomain }}" src="https://stats.coto.studio/js/script.outbound-links.js"></script>
+{{ end }}
