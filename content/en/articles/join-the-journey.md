@@ -4,7 +4,7 @@ menu: true
 style: style1
 alignment: center
 weight: 4
-image: images/poster.png
+image: images/poster.jpg
 imagePosition: "50% 28%"
 title: "Join the Journey"
 description: ""
