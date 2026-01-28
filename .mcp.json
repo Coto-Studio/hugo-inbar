@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "playwright-chrome": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--headless",
+        "--isolated"
+      ]
+    },
+    "playwright-webkit": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--headless",
+        "--isolated",
+        "--browser=webkit",
+        "--ignore-https-errors"
+      ]
+    }
+  }
+}

@@ -1,2 +1,5 @@
 enableRobotsTXT: true
 disableKinds: ["taxonomy", "term", "section"]
+
+# Increase timeout for image processing under QEMU emulation (ARM64 builds)
+timeout: 120s

@@ -1,6 +1,18 @@
 .nova
 *.lock
 /public
-/resources
+# Commit resources dir to avoid slow image processing in CI
+# /resources
 .vscode/
 docker-stack-op.yaml
+*.css.map
+
+# Node
+node_modules/
+
+# Playwright
+playwright-report/
+test-results/
+.playwright-mcp/
+# Backup of original large image
+assets/images/*.original
